@@ -1,0 +1,7 @@
+# Ignorar ambiente virtual
+.venv/
+
+# Também ignore caches, backups e outros arquivos que não precisam de controle de versão:
+__pycache__/
+*.py[cod]
+.DS_Store
