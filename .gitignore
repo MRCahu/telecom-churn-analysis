@@ -1,0 +1,22 @@
+# Ignorar a pasta do ambiente virtual
+.venv/
+
+# Python
+__pycache__/
+*.py[cod]
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Arquivos de sistema
+.DS_Store
+Thumbs.db
+
+# Logs (se houver)
+*.log
+
+# Ignorar dados brutos, se desejar (opcional)
+# data/raw/TelecomX_Data.json
+
+# Reports temporários (se não quiser versionar todas as imagens)
+# reports/
