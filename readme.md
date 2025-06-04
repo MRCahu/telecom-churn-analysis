@@ -1,36 +1,42 @@
-# 📊 Telecom X – Análise de Churn (Evasão de Clientes)
+````markdown
+# 📊 Telecom X – Análise de Churn
 
-> **Entenda, explique e aja** — um pipeline completo de dados que revela por que clientes cancelam serviços de telecom e como reverter essa tendência.
+> **Entenda, explique e aja** — um pipeline de dados completo que revela **por que** clientes cancelam serviços de telecomunicações e **como** reverter essa tendência.
 
 ---
 
 ## 1. Visão Geral
 
-Este repositório apresenta um estudo de caso de churn em uma empresa fictícia de telecomunicações, **Telecom X**. Por meio de um fluxo de trabalho de **ETL → Limpeza → Transformação → EDA → Insights → Recomendações**, o projeto demonstra boas práticas de engenharia e ciência de dados em Python.
+Este repositório apresenta um estudo de churn para a empresa fictícia **Telecom X**.  
+O fluxo de trabalho segue as etapas:
 
- 
+> **ETL → Limpeza → Transformação → EDA → Insights → Recomendações**
+
+Demonstramos boas práticas de engenharia e ciência de dados em Python — do _raw data_ até insights acionáveis.
+
+---
 
 ## 2. Propósito da Análise
 
-* **Identificar fatores críticos** que impulsionam o cancelamento de clientes.
-* **Quantificar o impacto** de variáveis financeiras (ex.: `Cobranca_Total`) e de relacionamento (ex.: `Meses_Contratado`).
-* **Produzir recomendações acionáveis** para equipes de marketing, produto e suporte ao cliente.
+- **Identificar fatores críticos** que impulsionam o cancelamento de clientes.  
+- **Mensurar o impacto** de variáveis financeiras (ex.: `Cobranca_Total`) e contratuais (ex.: `Meses_Contratado`).  
+- **Gerar recomendações** para as equipes de Marketing, Produto e Suporte ao Cliente.  
 
- 
+---
 
-## 3. Tecnologias e Bibliotecas
+## 3. Tecnologias & Bibliotecas
 
-| Camada               | Ferramentas / Bibliotecas                        |
-| -------------------- | ------------------------------------------------ |
-| Linguagem principal  | **Python 3.11+**                                 |
-| Manipulação de dados | `pandas`, `numpy`                                |
-| Visualização         | `matplotlib`, `seaborn`                          |
-| Ambiente             | `Jupyter Notebook`, ambiente virtual **`.venv`** |
-| Controle de versão   | **Git / GitHub**                                 |
+| Camada               | Ferramentas / Bibliotecas                          |
+| -------------------- | -------------------------------------------------- |
+| Linguagem            | **Python 3.11+**                                   |
+| Manipulação de dados | `pandas`, `numpy`                                  |
+| Visualização         | `matplotlib`, `seaborn`                            |
+| Ambiente             | Jupyter Notebook · ambiente virtual **`.venv`**    |
+| Controle de versão   | **Git ∙ GitHub**                                   |
 
- 
+---
 
-## 4. Estrutura do Projeto e Pastas
+## 4. Estrutura do Projeto
 
 ```text
 TelecomX-Churn-Analysis/
@@ -54,35 +60,35 @@ TelecomX-Churn-Analysis/
 │   ├── exploratory_analysis.py
 │   └── churn_numeric_analysis.py
 ├── requirements.txt
-└── README.md   ← **(você está aqui)**
-```
+└── README.md
+````
 
-> **Dica**: mantenha a separação **dados | código | relatórios** para projetos mais escaláveis e reprodutíveis.
+> **Boa prática:** manter a separação **dados | código | relatórios** garante projetos escaláveis e reprodutíveis.
 
- 
+---
 
-## 5. Exemplos de Gráficos e Insights Obtidos
+## 5. Exemplos de Gráficos & Insights
 
-| Gráfico                                                        | Descrição                                                                                                               |
-| -------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
-| ![Boxplot Churn vs. Cobrança Total](reports/churn_boxplot.png) | **Clientes que cancelam** pagam, em média, R\$ 38 mais por mês do que os que permanecem.                                |
-| ![Histograma Cobrança Total](reports/cobranca_hist.png)        | Distribuição assimétrica sugere **segmentos premium** com maior risco de churn.                                         |
-| ![Heatmap de Correlação](reports/corr_heatmap.png)             | Forte correlação positiva entre `Cobranca_Mensal` e `Cobranca_Total`; fraca correlação entre tempo de contrato e churn. |
+| Gráfico                                                        | Insight resumido                                                                                   |
+| -------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
+| ![Boxplot Churn vs. Cobrança Total](reports/churn_boxplot.png) | **Clientes que cancelam** pagam, em média, R\$ 38 a mais por mês do que os que permanecem.         |
+| ![Histograma Cobrança Total](reports/cobranca_hist.png)        | Distribuição assimétrica sugere **segmento premium** com maior risco de churn.                     |
+| ![Heatmap de Correlação](reports/corr_heatmap.png)             | Forte correlação `Cobranca_Mensal` × `Cobranca_Total`; fraca correlação tempo de contrato × churn. |
 
-**Principais descobertas**
+### Descobertas-chave
 
-* Tarifas altas amplificam o churn em até **24 p.p.** dentro do primeiro ano.
-* Clientes **sem serviços combinados (internet + TV)** têm **2×** mais probabilidade de cancelar.
-* Programas de fidelização reduzem churn em **15 %** após o 6.º mês.
+* Tarifas altas ampliam churn em até **24 p.p.** no primeiro ano.
+* Clientes **sem combo (internet + TV)** têm **2×** mais chance de cancelar.
+* Programas de fidelidade reduzem churn em **15 %** após o 6.º mês.
 
- 
+---
 
-## 6. Instruções para Execução
+## 6. Como Executar
 
 1. **Clone o repositório**
 
    ```bash
-   git clone https://github.com/seu-usuario/TelecomX-Churn-Analysis.git
+   git clone https://github.com/MRCahu/TelecomX-Churn-Analysis.git
    cd TelecomX-Churn-Analysis
    ```
 
@@ -90,8 +96,10 @@ TelecomX-Churn-Analysis/
 
    ```bash
    python -m venv .venv
-   source .venv/bin/activate   # Linux/macOS
-   .venv\Scripts\activate      # Windows
+   # Linux/macOS
+   source .venv/bin/activate
+   # Windows
+   .venv\Scripts\activate
    ```
 
 3. **Instale as dependências**
@@ -103,19 +111,16 @@ TelecomX-Churn-Analysis/
 4. **Execute o pipeline**
 
    ```bash
-   # Extrair e carregar
+   # ETL
    python src/load_telecom_data.py
-
-   # Checar qualidade
+   # Qualidade
    python src/data_quality_checks.py
-
-   # Limpar e transformar
+   # Limpeza / Transformação
    python src/data_cleaning.py
    python src/data_transformation.py
-
    # Análise exploratória
    python src/exploratory_analysis.py
-   python src/churn_numeric_analysis.py
+   python src/churn_numeric_analysis.py   # opcional
    ```
 
 5. **Abra o notebook**
@@ -124,31 +129,37 @@ TelecomX-Churn-Analysis/
    jupyter notebook notebooks/TelecomX_Churn_Analysis.ipynb
    ```
 
-> **Observação**: todos os gráficos são salvos automaticamente em `reports/`.
+> Todos os gráficos são salvos automaticamente em **`reports/`**.
 
- 
+---
 
-## 7. Conclusões e Recomendações
+## 7. Conclusões & Recomendações
 
-* **Reprecificação inteligente**: oferecer planos de menor custo aos segmentos identificados como sensíveis a preço.
-* **Bundles de serviços**: ampliar pacotes com TV e Internet para reduzir churn.
-* **Programas de fidelidade**: estímulos de permanência após 6 meses reduzem cancelamentos.
-* **Monitoramento contínuo**: incluir métricas de satisfação (NPS) no próximo ciclo analítico.
+* **Reprecificação inteligente** para clientes sensíveis a preço.
+* **Bundles de serviços** (TV + Internet) reduzem a probabilidade de churn.
+* **Programas de fidelidade** após 6 meses diminuem cancelamentos em 15 %.
+* **Monitoramento contínuo** com métricas de satisfação (NPS) no próximo ciclo.
 
- 
+---
 
 ## 8. Licença
 
-Distribuído sob a licença **MIT**. Consulte o arquivo [`LICENSE`](LICENSE) para mais detalhes.
+Distribuído sob a licença **MIT** — consulte [`LICENSE`](LICENSE) para detalhes.
 
- 
+---
 
 ## 9. Contato
 
-|              |                                                         |
-| ------------ | ------------------------------------------------------- |
-| **Autor**    | Mauro Roberto B. Cahú                                   |
-| **LinkedIn** | [in/mauro-cahu](https://www.linkedin.com/in/mauro-cahu) |
-| **E-mail**   | [mauro.cahu@example.com](mailto:mauro.cahu@example.com) |
+| Campo        | Informação                                                                                |
+| ------------ | ----------------------------------------------------------------------------------------- |
+| **Autor**    | **Mauro Roberto Barbosa Cahu**                                                            |
+| **E-mail**   | [maurocahu@gmail.com](mailto:maurocahu@gmail.com)                                         |
+| **Telefone** | +55 (81) 99292-2415                                                                       |
+| **LinkedIn** | [linkedin.com/in/mauro-cahu-159a05273](https://www.linkedin.com/in/mauro-cahu-159a05273/) |
+| **GitHub**   | [github.com/MRCahu](https://github.com/MRCahu)                                            |
+| **Cidade**   | Recife / PE – Brasil                                                                      |
 
-> Feedbacks e *pull requests* são muito bem-vindos. Vamos aprimorar a análise de churn juntos! 🚀
+Feedbacks e *pull requests* são muito bem-vindos — vamos aprimorar a análise de churn juntos 🚀
+
+```
+```
