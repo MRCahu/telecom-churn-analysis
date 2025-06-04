@@ -1,6 +1,3 @@
-Claro! Abaixo está o conteúdo completo em Markdown para o seu `README.md`, pronto para ser colado no GitHub:
-
-````markdown
 # 📊 Telecom X – Análise de Churn
 
 > **Entenda, explique e aja** — um pipeline de dados completo que revela **por que** clientes cancelam serviços de telecomunicações e **como** reverter essa tendência.
@@ -162,4 +159,3 @@ Distribuído sob a licença **MIT** — consulte [`LICENSE`](LICENSE) para detal
 | **Cidade**   | Recife / PE – Brasil                                                                      |
 
 Feedbacks e *pull requests* são muito bem-vindos — vamos aprimorar a análise de churn juntos 🚀
-````
