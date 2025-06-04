@@ -1,3 +1,5 @@
+Claro! Abaixo está o conteúdo completo em Markdown para o seu `README.md`, pronto para ser colado no GitHub:
+
 ````markdown
 # 📊 Telecom X – Análise de Churn
 
@@ -60,8 +62,8 @@ TelecomX-Churn-Analysis/
 │   ├── exploratory_analysis.py
 │   └── churn_numeric_analysis.py
 ├── requirements.txt
-└── README.md
-````
+└── README.md   ← **você está aqui**
+```
 
 > **Boa prática:** manter a separação **dados | código | relatórios** garante projetos escaláveis e reprodutíveis.
 
@@ -160,6 +162,4 @@ Distribuído sob a licença **MIT** — consulte [`LICENSE`](LICENSE) para detal
 | **Cidade**   | Recife / PE – Brasil                                                                      |
 
 Feedbacks e *pull requests* são muito bem-vindos — vamos aprimorar a análise de churn juntos 🚀
-
-```
-```
+````
